@@ -43,3 +43,7 @@ ol li { margin: 4px 0; }
 .important { border-left: 4px solid var(--accent); padding: 8px 14px; background: var(--card); border-radius: 8px; }
 footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 16px; }
 .lang { float: right; }
+.langs { color: var(--muted); font-size: 0.85rem; line-height: 1.9; margin: 0 0 24px; }
+.note { color: var(--muted); }
+h2 { scroll-margin-top: 16px; }
+ul li { margin: 4px 0; }

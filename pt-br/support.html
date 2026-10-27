@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suporte - Byoshin</title>
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header><img src="../icon.png" alt=""><div><div class="title">Byoshin</div><div class="sub">Seconds Clock</div></div></header>
+<p class="langs"><a href="../support.html">日本語</a> · <a href="../en/support.html">English</a> · <a href="../es/support.html">Español</a> · Português (Brasil) · <a href="../de/support.html">Deutsch</a> · <a href="../fr/support.html">Français</a> · <a href="../ko/support.html">한국어</a> · <a href="../zh-hans/support.html">简体中文</a> · <a href="../zh-hant/support.html">繁體中文</a></p>
+<h1>Suporte</h1>
+<p>Dúvidas ou problemas? Escreva para nós quando quiser.<br><a href="mailto:ichirin.apps@gmail.com">ichirin.apps@gmail.com</a></p>
+<p class="note">O Byoshin mostra os segundos usando as Atividades ao Vivo do iOS. Algumas coisas são definidas pelo iOS e os apps não podem mudá-las, por isso reunimos aqui as perguntas frequentes.</p>
+
+<h2 id="always-on">Como manter os segundos visíveis o dia todo?</h2>
+<p>Use automações do Atalhos para reiniciar os segundos a cada 6 horas (recurso do Byoshin Pro). No app, “Configurar Exibição Contínua” guia você tela por tela, de acordo com a sua versão do iOS.</p>
+<ul>
+<li>No Atalhos, toque em Automação → + → Horário</li>
+<li>Escolha 0:00, repetir Diariamente e “Executar Imediatamente”</li>
+<li>Adicione a ação “Iniciar Exibição de Segundos” (busque “Byoshin”)</li>
+<li>Crie o mesmo para 6:00, 12:00 e 18:00 (4 no total)</li>
+</ul>
+
+<h2 id="status">Como confirmo que está configurado?</h2>
+<p>Toque em “Configurar Exibição Contínua n/4” na tela principal para ver o status de cada um dos 4 horários. Um ✓ aparece depois que a automação é executada no horário.</p>
+
+<h2 id="not-shown">Os segundos não aparecem</h2>
+<p>Verifique se Ajustes → Byoshin → Atividades ao Vivo está ativado. Quando está desativado, o iOS não permite a exibição dos segundos.</p>
+<p>Depois de ativar, abra o Byoshin e toque em Iniciar.</p>
+
+<h2 id="eight-hours">A exibição some depois de cerca de 8 horas</h2>
+<p>No iOS, uma Atividade ao Vivo pode ficar na tela por no máximo 8 horas seguidas, por isso em qualquer app ela termina depois de cerca de 8 horas.</p>
+<p>Se você criar as automações em “Configurar Exibição Contínua”, a exibição é reiniciada automaticamente a cada 6 horas e os segundos ficam visíveis o dia todo (recurso do Byoshin Pro). Sem automações, toque na notificação que chega pouco antes do fim para reiniciar.</p>
+
+<h2 id="lock-screen-only">Posso ocultar só na Tela Bloqueada?</h2>
+<p>No iOS, a Dynamic Island e a Atividade ao Vivo da Tela Bloqueada funcionam em conjunto, e um app não pode mostrar só uma delas.</p>
+<p>Por isso, o Byoshin usa na Tela Bloqueada uma única linha fina e discreta, que não atrapalha o papel de parede.</p>
+
+<h2 id="swiped-away">Deslizei na Tela Bloqueada e os segundos pararam</h2>
+<p>Ao deslizar uma Atividade ao Vivo na Tela Bloqueada, o iOS a encerra, e ela só volta quando a próxima automação for executada.</p>
+<p>Para exibir de novo na hora, abra o Byoshin e toque em Iniciar, ou use o widget ou o botão da Central de Controle.</p>
+
+<h2 id="other-activities">Com a Atividade ao Vivo de outro app, os segundos ficam menores ou somem</h2>
+<p>Quando há duas ou mais Atividades ao Vivo, o iOS decide automaticamente qual aparece grande e qual aparece pequena (só como um ícone redondo). Os apps não podem escolher a ordem.</p>
+<p>Navegação, timers e similares podem ter prioridade enquanto estão ativos, mas quando a atividade do outro app termina, os segundos voltam ao tamanho normal.</p>
+
+<h2 id="app-open">Os segundos não aparecem na Dynamic Island com o Byoshin aberto</h2>
+<p>No iOS, a Atividade ao Vivo de um app não aparece na Dynamic Island enquanto esse app está aberto.</p>
+<p>Ao ir para a Tela de Início ou mudar para outro app, ela aparece na hora. Com o Byoshin aberto, você vê os segundos em números grandes na tela.</p>
+
+<h2 id="automation">Parece que as automações não estão sendo executadas</h2>
+<p>Verifique o seguinte no app Atalhos:</p>
+<ul>
+<li>“Executar Imediatamente” está selecionado (com “Executar Após Confirmação”, a exibição não começa sozinha)</li>
+<li>Se a ação mostrar “Abrir ao Executar”, está desativado</li>
+<li>As 4 automações (0:00, 6:00, 12:00 e 18:00) existem e estão ativadas</li>
+</ul>
+<p>A exibição contínua é um recurso do Byoshin Pro. Em “Status da Exibição Contínua” no Byoshin, você vê se cada horário está funcionando (o ✓ aparece depois do horário definido).</p>
+
+<h2 id="no-island">Funciona em modelos sem Dynamic Island?</h2>
+<p>Sim. Em modelos sem Dynamic Island, os segundos aparecem como Atividade ao Vivo na Tela Bloqueada e na Central de Notificações. Você também pode vê-los em widgets da Tela de Início e da Tela Bloqueada (os widgets são um recurso do Byoshin Pro).</p>
+
+<h2 id="offset">Às vezes os segundos parecem atrasados cerca de um segundo</h2>
+<p>O iOS desenha os segundos a partir do relógio do iPhone. A hora da barra de status e as Atividades ao Vivo são atualizadas em momentos um pouco diferentes, então podem parecer levemente defasadas, por exemplo na virada do minuto.</p>
+<p>A hora em si não está errada, pode confiar. Além disso, no Modo Pouca Energia ou com a tela escurecida, o iOS pode atualizar a exibição com menos frequência.</p>
+
+<h2 id="battery">Afeta a bateria?</h2>
+<p>O iOS desenha os segundos e o Byoshin não fica rodando em segundo plano, então o impacto é pequeno.</p>
+<p>Mesmo assim, manter uma Atividade ao Vivo o dia todo usa um pouco mais de energia do que não exibi-la. Você pode parar a qualquer momento com Parar no app.</p>
+
+<h2 id="restore">Como restauro minha compra?</h2>
+<p>Toque no botão de ajustes no canto superior direito do Byoshin e depois em “Restaurar Compra”. É preciso estar conectado com a mesma Conta Apple usada na compra. O Byoshin Pro é uma compra única, não uma assinatura.</p>
+
+<footer><a href="../en/">Byoshin</a> · <a href="../en/privacy.html">Privacy Policy</a> · © 2026 Ichirin</footer>
+</main>
+</body>
+</html>

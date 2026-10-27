@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistance - Byoshin</title>
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header><img src="../icon.png" alt=""><div><div class="title">Byoshin</div><div class="sub">Seconds Clock</div></div></header>
+<p class="langs"><a href="../support.html">日本語</a> · <a href="../en/support.html">English</a> · <a href="../es/support.html">Español</a> · <a href="../pt-br/support.html">Português (Brasil)</a> · <a href="../de/support.html">Deutsch</a> · Français · <a href="../ko/support.html">한국어</a> · <a href="../zh-hans/support.html">简体中文</a> · <a href="../zh-hant/support.html">繁體中文</a></p>
+<h1>Assistance</h1>
+<p>Une question ou un problème ? Écrivez-nous à tout moment.<br><a href="mailto:ichirin.apps@gmail.com">ichirin.apps@gmail.com</a></p>
+<p class="note">Byoshin affiche les secondes grâce aux activités en direct d’iOS. Certains comportements sont définis par iOS et ne peuvent pas être modifiés par les apps : voici les réponses aux questions fréquentes.</p>
+
+<h2 id="always-on">Comment garder les secondes affichées toute la journée ?</h2>
+<p>Les automatisations de Raccourcis relancent l’affichage des secondes toutes les 6 heures (fonction de Byoshin Pro). Dans l’app, « Configurer l’affichage permanent » vous guide écran par écran, selon votre version d’iOS.</p>
+<ul>
+<li>Dans Raccourcis, touchez Automatisation → + → Heure de la journée</li>
+<li>Choisissez 0:00, répéter Tous les jours, puis « Exécuter immédiatement »</li>
+<li>Ajoutez l’action « Démarrer l’affichage des secondes » (recherchez « Byoshin »)</li>
+<li>Faites de même pour 6:00, 12:00 et 18:00 (4 au total)</li>
+</ul>
+
+<h2 id="status">Comment vérifier que tout est configuré ?</h2>
+<p>Touchez « Configurer l’affichage permanent n/4 » sur l’écran principal pour voir l’état de chacune des 4 heures. Un ✓ apparaît une fois l’automatisation exécutée à l’heure prévue.</p>
+
+<h2 id="not-shown">Les secondes ne s’affichent pas</h2>
+<p>Vérifiez que Réglages → Byoshin → Activités en direct est activé. Lorsque l’option est désactivée, iOS n’autorise pas l’affichage des secondes.</p>
+<p>Après l’avoir activée, ouvrez Byoshin et touchez Démarrer.</p>
+
+<h2 id="eight-hours">L’affichage disparaît au bout d’environ 8 heures</h2>
+<p>Sur iOS, une activité en direct peut rester affichée 8 heures au maximum d’affilée : c’est pourquoi, dans toutes les apps, elle se termine au bout d’environ 8 heures.</p>
+<p>Si vous créez les automatisations dans « Configurer l’affichage permanent », l’affichage se relance automatiquement toutes les 6 heures et les secondes restent visibles toute la journée (fonction de Byoshin Pro). Sans automatisation, touchez la notification reçue peu avant la fin pour relancer l’affichage.</p>
+
+<h2 id="lock-screen-only">Puis-je le masquer uniquement sur l’écran verrouillé ?</h2>
+<p>Sur iOS, la Dynamic Island et l’activité en direct de l’écran verrouillé vont ensemble : une app ne peut pas afficher l’une sans l’autre.</p>
+<p>C’est pourquoi Byoshin n’affiche sur l’écran verrouillé qu’une seule ligne fine et discrète, qui ne gêne pas votre fond d’écran.</p>
+
+<h2 id="swiped-away">J’ai balayé l’affichage sur l’écran verrouillé et les secondes ont disparu</h2>
+<p>Lorsque vous balayez une activité en direct sur l’écran verrouillé, iOS y met fin. Elle ne revient qu’à la prochaine exécution de l’automatisation.</p>
+<p>Pour l’afficher de nouveau tout de suite, ouvrez Byoshin et touchez Démarrer, ou utilisez le widget ou le bouton du centre de contrôle.</p>
+
+<h2 id="other-activities">Avec l’activité en direct d’une autre app, les secondes deviennent plus petites ou disparaissent</h2>
+<p>Lorsqu’il y a deux activités en direct ou plus, iOS décide automatiquement laquelle s’affiche en grand et laquelle en petit (sous forme d’icône ronde). Les apps ne peuvent pas choisir l’ordre.</p>
+<p>La navigation, les minuteurs, etc. peuvent être prioritaires pendant leur utilisation, mais une fois l’activité de l’autre app terminée, les secondes retrouvent leur taille habituelle.</p>
+
+<h2 id="app-open">Les secondes n’apparaissent pas dans la Dynamic Island quand Byoshin est ouverte</h2>
+<p>Sur iOS, l’activité en direct d’une app ne s’affiche pas dans la Dynamic Island tant que cette app est ouverte.</p>
+<p>Revenez à l’écran d’accueil ou passez à une autre app : elle apparaît aussitôt. Quand Byoshin est ouverte, les secondes s’affichent en grand à l’écran.</p>
+
+<h2 id="automation">Les automatisations ne semblent pas s’exécuter</h2>
+<p>Vérifiez les points suivants dans l’app Raccourcis :</p>
+<ul>
+<li>« Exécuter immédiatement » est sélectionné (avec « Exécuter après confirmation », l’affichage ne démarre pas tout seul)</li>
+<li>Si l’action affiche « Ouvrir lors de l’exécution », l’option est désactivée</li>
+<li>Les 4 automatisations (0:00, 6:00, 12:00 et 18:00) existent et sont activées</li>
+</ul>
+<p>L’affichage permanent est une fonction de Byoshin Pro. « État de l’affichage permanent » dans Byoshin indique si chaque heure fonctionne (le ✓ apparaît après l’heure prévue).</p>
+
+<h2 id="no-island">Est-ce que ça fonctionne sur les iPhone sans Dynamic Island ?</h2>
+<p>Oui. Sur les modèles sans Dynamic Island, les secondes s’affichent en activité en direct sur l’écran verrouillé et dans le centre de notifications. Vous pouvez aussi les voir dans les widgets de l’écran d’accueil et de l’écran verrouillé (les widgets sont une fonction de Byoshin Pro).</p>
+
+<h2 id="offset">Les secondes semblent parfois décalées d’environ une seconde</h2>
+<p>Les secondes sont dessinées par iOS à partir de l’horloge de l’iPhone. L’heure de la barre d’état et les activités en direct sont actualisées à des moments légèrement différents : elles peuvent donc sembler très légèrement décalées, par exemple au changement de minute.</p>
+<p>L’heure elle-même n’est pas décalée, vous pouvez vous y fier. En mode Économie d’énergie ou lorsque l’écran est assombri, iOS peut aussi actualiser l’affichage moins souvent.</p>
+
+<h2 id="battery">Quel est l’impact sur la batterie ?</h2>
+<p>C’est iOS qui dessine les secondes et Byoshin ne tourne pas en arrière-plan : l’impact reste donc faible.</p>
+<p>Cela dit, une activité en direct affichée toute la journée consomme un peu plus que sans affichage. Vous pouvez l’arrêter à tout moment avec Arrêter dans l’app.</p>
+
+<h2 id="restore">Comment restaurer mon achat ?</h2>
+<p>Touchez le bouton des réglages en haut à droite de Byoshin, puis « Restaurer l’achat ». Vous devez être connecté avec le même compte Apple que lors de l’achat. Byoshin Pro est un achat unique, pas un abonnement.</p>
+
+<footer><a href="../en/">Byoshin</a> · <a href="../en/privacy.html">Privacy Policy</a> · © 2026 Ichirin</footer>
+</main>
+</body>
+</html>
