@@ -16,13 +16,13 @@
 <p class="note">Byoshin shows the seconds using iOS Live Activities. Some things are set by iOS and can’t be changed by apps, so we’ve answered common questions here.</p>
 
 <h2 id="always-on">How do I keep the seconds on all day?</h2>
-<p>Use Shortcuts automations to restart the seconds display every 6 hours. Always-On Setup in the app walks you through it one screen at a time, matched to your version of iOS.</p>
+<p>Use Shortcuts automations to restart the seconds display every 6 hours. Always-On Setup in the app walks you through it with real screens, one at a time, matched to your version of iOS.</p>
 <ul>
-<li>In Shortcuts, tap Automation → + → Time of Day</li>
-<li>Set the time to 12:00 AM, repeat Daily, and choose Run Immediately</li>
-<li>Add the action “Start Seconds Display” (search for “Byoshin”)</li>
-<li>Create the same automation for 6:00 AM, 12:00 PM and 6:00 PM (4 in total)</li>
+<li>iOS 27 or later: + → Edit → Automation → Time of Day, set 12:00 AM and Every Day, then add “Start Seconds Display” (search for “Byoshin”)</li>
+<li>iOS 26: Automation → New Automation → Time of Day, set 12:00 AM, Daily and Run Immediately, then add “Start Seconds Display”</li>
+<li>Create the same for 6:00 AM, 12:00 PM and 6:00 PM (4 in total)</li>
 </ul>
+<p>Widgets show the seconds even without automations.</p>
 
 <h2 id="status">How can I check that it’s set up?</h2>
 <p>Tap “Set Up Always-On n/4” on the main screen to see the status of each of the 4 times. A ✓ appears once the automation has run after its scheduled time.</p>
@@ -54,8 +54,8 @@
 <h2 id="automation">The automations don’t seem to run</h2>
 <p>Please check the following in the Shortcuts app:</p>
 <ul>
-<li>Run Immediately is selected (with Run After Confirmation, the display won’t start on its own)</li>
-<li>If the action shows “Open When Run”, it’s turned off</li>
+<li>iOS 27 or later: Automation is turned on in the time settings</li>
+<li>iOS 26: Run Immediately is selected (with Run After Confirmation, the display won’t start on its own)</li>
 <li>All 4 automations (12:00 AM, 6:00 AM, 12:00 PM, 6:00 PM) exist and are turned on</li>
 </ul>
 <p>Always-On Status in Byoshin shows whether each time is working (the ✓ appears after the scheduled time).</p>
@@ -63,9 +63,25 @@
 <h2 id="no-island">Does it work on iPhone models without the Dynamic Island?</h2>
 <p>Yes. On models without the Dynamic Island, the seconds appear as a Live Activity on the Lock Screen and in Notification Center. You can also see them in Home Screen and Lock Screen widgets.</p>
 
+<h2 id="widgets">Can I use just the widgets?</h2>
+<p>Yes. Widgets show the seconds without any automation setup, and unlike Live Activities they don’t disappear after 8 hours.</p>
+<ul>
+<li>Home Screen: Seconds (small), Time &amp; Seconds (small, medium)</li>
+<li>Lock Screen: the line above the clock (minutes:seconds), circular and rectangular (seconds)</li>
+</ul>
+<p>See Settings → Widgets in Byoshin for how to add them. To show the seconds in the Dynamic Island, use the Live Activity with automations.</p>
+
+<h2 id="offset-setting">What is Seconds Offset?</h2>
+<p>It lets you fine-tune the seconds when they look slightly behind (or ahead of) another clock. In Byoshin, go to Settings → Seconds Offset to adjust the Dynamic Island &amp; Lock Screen and the widgets separately, from −1.00 to +1.00 seconds in 0.01-second steps.</p>
+<ul>
+<li>If the seconds look behind, increase it (+); if they look ahead, decrease it (−)</li>
+<li>At 0, Byoshin shows the iOS clock as is</li>
+</ul>
+<p>The Lock Screen “Date &amp; Time” and the widgets’ hours:minutes always follow the iOS clock.</p>
+
 <h2 id="offset">The seconds sometimes look about a second off</h2>
 <p>The seconds are drawn by iOS from your iPhone’s clock. iOS refreshes the status bar time and Live Activities at slightly different moments, so they can look a tiny bit apart—for example, right when the minute changes.</p>
-<p>The time itself isn’t off, so you can rely on it. iOS may also update the display less often in Low Power Mode or when the screen is dimmed.</p>
+<p>The time itself isn’t off, so you can rely on it. If it bothers you, adjust it in Settings → Seconds Offset. iOS may also update the display less often in Low Power Mode or when the screen is dimmed.</p>
 
 <h2 id="battery">Does it affect battery life?</h2>
 <p>iOS draws the seconds, and Byoshin doesn’t keep running in the background, so the impact is kept small.</p>

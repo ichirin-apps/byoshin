@@ -16,13 +16,13 @@
 <p class="note">O Byoshin mostra os segundos usando as Atividades ao Vivo do iOS. Algumas coisas são definidas pelo iOS e os apps não podem mudá-las, por isso reunimos aqui as perguntas frequentes.</p>
 
 <h2 id="always-on">Como manter os segundos visíveis o dia todo?</h2>
-<p>Use automações do Atalhos para reiniciar os segundos a cada 6 horas. No app, “Configurar Exibição Contínua” guia você tela por tela, de acordo com a sua versão do iOS.</p>
+<p>Use automações do Atalhos para reiniciar os segundos a cada 6 horas. No app, “Configurar Exibição Contínua” guia você com telas reais, uma por vez, de acordo com a sua versão do iOS.</p>
 <ul>
-<li>No Atalhos, toque em Automação → + → Horário</li>
-<li>Escolha 0:00, repetir Diariamente e “Executar Imediatamente”</li>
-<li>Adicione a ação “Iniciar Exibição de Segundos” (busque “Byoshin”)</li>
+<li>iOS 27 ou posterior: + → Editar → Automação → Horário, escolha 0:00 e Todos os Dias e adicione “Iniciar Exibição de Segundos” (busque “Byoshin”)</li>
+<li>iOS 26: Automação → Nova Automação → Horário, escolha 0:00, Diariamente e “Executar Imediatamente” e adicione “Iniciar Exibição de Segundos”</li>
 <li>Crie o mesmo para 6:00, 12:00 e 18:00 (4 no total)</li>
 </ul>
+<p>Os widgets mostram os segundos mesmo sem automações.</p>
 
 <h2 id="status">Como confirmo que está configurado?</h2>
 <p>Toque em “Configurar Exibição Contínua n/4” na tela principal para ver o status de cada um dos 4 horários. Um ✓ aparece depois que a automação é executada no horário.</p>
@@ -54,8 +54,8 @@
 <h2 id="automation">Parece que as automações não estão sendo executadas</h2>
 <p>Verifique o seguinte no app Atalhos:</p>
 <ul>
-<li>“Executar Imediatamente” está selecionado (com “Executar Após Confirmação”, a exibição não começa sozinha)</li>
-<li>Se a ação mostrar “Abrir ao Executar”, está desativado</li>
+<li>iOS 27 ou posterior: Automação está ativado nos ajustes do horário</li>
+<li>iOS 26: “Executar Imediatamente” está selecionado (com “Executar Após Confirmação”, a exibição não começa sozinha)</li>
 <li>As 4 automações (0:00, 6:00, 12:00 e 18:00) existem e estão ativadas</li>
 </ul>
 <p>Em “Status da Exibição Contínua” no Byoshin, você vê se cada horário está funcionando (o ✓ aparece depois do horário definido).</p>
@@ -63,9 +63,25 @@
 <h2 id="no-island">Funciona em modelos sem Dynamic Island?</h2>
 <p>Sim. Em modelos sem Dynamic Island, os segundos aparecem como Atividade ao Vivo na Tela Bloqueada e na Central de Notificações. Você também pode vê-los em widgets da Tela de Início e da Tela Bloqueada.</p>
 
+<h2 id="widgets">Posso usar só os widgets?</h2>
+<p>Sim. Os widgets mostram os segundos sem configurar automações e, ao contrário das Atividades ao Vivo, não somem depois de 8 horas.</p>
+<ul>
+<li>Tela de Início: Segundos (pequeno), Hora e Segundos (pequeno, médio)</li>
+<li>Tela Bloqueada: a linha acima do relógio (minutos:segundos), redondo e retangular (segundos)</li>
+</ul>
+<p>No Byoshin, Ajustes → Widgets explica como adicioná-los. Para ver os segundos na Dynamic Island, use a Atividade ao Vivo com automações.</p>
+
+<h2 id="offset-setting">O que é o ajuste dos segundos?</h2>
+<p>Serve para ajustar os segundos quando parecem um pouco atrasados (ou adiantados) em relação a outro relógio. No Byoshin, em Ajustes → Ajuste dos segundos, você ajusta separadamente a Dynamic Island e Tela Bloqueada e os widgets, de −1,00 a +1,00 segundo em passos de 0,01.</p>
+<ul>
+<li>Se parecerem atrasados, aumente (+); se parecerem adiantados, diminua (−)</li>
+<li>Em 0, o Byoshin mostra o relógio do iOS como está</li>
+</ul>
+<p>A “Data e Hora” da Tela Bloqueada e as horas:minutos dos widgets sempre seguem o relógio do iOS.</p>
+
 <h2 id="offset">Às vezes os segundos parecem atrasados cerca de um segundo</h2>
 <p>O iOS desenha os segundos a partir do relógio do iPhone. A hora da barra de status e as Atividades ao Vivo são atualizadas em momentos um pouco diferentes, então podem parecer levemente defasadas, por exemplo na virada do minuto.</p>
-<p>A hora em si não está errada, pode confiar. Além disso, no Modo Pouca Energia ou com a tela escurecida, o iOS pode atualizar a exibição com menos frequência.</p>
+<p>A hora em si não está errada, pode confiar. Se incomodar, ajuste em Ajustes → Ajuste dos segundos. Além disso, no Modo Pouca Energia ou com a tela escurecida, o iOS pode atualizar a exibição com menos frequência.</p>
 
 <h2 id="battery">Afeta a bateria?</h2>
 <p>O iOS desenha os segundos e o Byoshin não fica rodando em segundo plano, então o impacto é pequeno.</p>
